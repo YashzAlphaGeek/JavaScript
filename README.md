@@ -45,3 +45,69 @@ val=Number(val);
 console.log(val+1);
 console.log(typeof val);
 </code></pre>
+
+# Function
+
+## Function Declaration
+Function Declaration can be hosted
+
+<pre><code>
+//Function Declaration
+function greet(){
+    console.log("Hello Yashwanth");
+}
+</code></pre>
+
+## Function Expression
+Function Declaration cannot be hosted
+
+<pre><code>
+//Function Expression
+const speak =function()
+{
+    console.log("Good Day");
+};
+
+greet();
+speak();
+</code></pre>
+
+## Arguments & Parameters
+<pre><code>
+//Arguments & Parameters
+const speak =function(firstName='Yash',lastName='Yashz')
+{
+    console.log(`Good Day ${firstName},${lastName}`);
+};
+
+speak();
+speak('Yashwanth','Parameswaran');
+</code></pre>
+
+## Returning of Values
+
+### Regular Function
+<pre><code>
+const calcArea=function(radiusArea)
+{
+    return 3.14 * radiusArea **2;
+}
+
+const area= calcArea(5);
+console.log(area);
+</code></pre>
+
+### Arrow Function
+<pre><code>
+const calcArea=radiusArea => {
+    return 3.14 * radiusArea **2;
+}
+
+const area= calcArea(5);
+console.log(area);
+</code></pre>
+
+<pre><code>
+const greet = () => 'Hello, World';
+greet();
+</code></pre>
